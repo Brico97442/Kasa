@@ -1,8 +1,7 @@
-import logo from "../assets/logo.png";
-
+import logo from "../assets/logo.png"; 
 function Banner() {
   return (
-    <div>
+    <div className="banner">
       <img src={logo} alt="logo kasa" className="logo-kasa" />
     </div>
   );

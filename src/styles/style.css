@@ -1,0 +1,19 @@
+.banner {
+  background-color: rgb(4, 142, 18);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 1240px;
+  height: 50px;
+  background: #dfaa38;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 57px;
+}
+
+/*# sourceMappingURL=style.css.map */

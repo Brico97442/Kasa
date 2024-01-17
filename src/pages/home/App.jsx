@@ -1,6 +1,6 @@
 import Header from "../../components/Header";
 import Banner from "../../components/Banner";
-import "../../styles/index.css";
+import "../../styles/style.css";
 
 function App() {
   return (
