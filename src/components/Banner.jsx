@@ -1,4 +1,5 @@
-import logo from "../assets/logo.png"; 
+import logo from "../assets/logo-color.png"; 
+
 function Banner() {
   return (
     <div className="banner">
