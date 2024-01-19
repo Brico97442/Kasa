@@ -1,8 +1,8 @@
-
+import Cart from "./Cart";
 function Gallery() {
   return (
     <div className="gallery-container">
-      <p>le chien </p>
+      <Cart/>
     </div>
   );
 }

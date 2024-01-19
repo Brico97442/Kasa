@@ -1,8 +1,18 @@
 @import "./components/banner.scss";
 @import "./layout/header.scss";
 @import "./components/gallery.scss";
-
-body {
-    width: 1440px;
+@import "./layout/footer.scss";
+@import "./components/cart.scss";
+* {
+    margin: 0;
+    padding: 0;
+}
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1240px;
     margin: auto;
+    
 }
