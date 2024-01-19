@@ -1,15 +1,8 @@
 @import "./components/banner.scss";
-nav {
-    display: flex;
-    justify-content: space-between;
-    width: 1240px;
-    height: 50px;
-    background: #dfaa38;
-}
+@import "./layout/header.scss";
+@import "./components/gallery.scss";
 
-ul {
-    display: flex;
-    list-style: none ;
-    gap: 57px;
+body {
+    width: 1440px;
+    margin: auto;
 }
-
