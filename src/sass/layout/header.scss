@@ -14,8 +14,11 @@ header {
         ul {
             display: flex;
             align-items: center;
-            list-style: none ;
             gap: 57px;
+            .header-links{
+                text-decoration: none;
+                color: #FF6060;
+            }
         }
     }
 }

@@ -36,8 +36,11 @@ header nav img {
 header nav ul {
   display: flex;
   align-items: center;
-  list-style: none;
   gap: 57px;
+}
+header nav ul .header-links {
+  text-decoration: none;
+  color: #FF6060;
 }
 
 .gallery-container {
