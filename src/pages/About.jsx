@@ -1,6 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-function Para () {
+function About () {
   return (
     <div>
     <Header />
@@ -8,4 +8,4 @@ function Para () {
     </div>
   )
 }
-export default Para
+export default About

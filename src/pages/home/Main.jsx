@@ -5,7 +5,7 @@ import Footer from "../../components/Footer";
 import "../../styles/style.css";
 
 
-function App() {
+function Main() {
   return (
     <div className="app-container">
       <Header />
@@ -16,4 +16,4 @@ function App() {
   );
 }
 
-export default App;
+export default Main;

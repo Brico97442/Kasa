@@ -5,7 +5,7 @@ function Gallery() {
   return (
     <div className="gallery-container">
       {logements.map (logement => {
-        return (<Cart key={logement.id} image={logement.cover}/>)
+        return (<Cart key={logement.id} image={logement.cover} title={logement.title}/>)
       }) }
   
     </div>

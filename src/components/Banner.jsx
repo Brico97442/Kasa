@@ -1,7 +1,7 @@
 
 import imgBanner from "../assets/img-banner.png";
 
-function Banner(image) {
+function Banner() {
   return (
     <div className="banner">
       <img src={imgBanner} alt="img-banner " className="img-banner" />
