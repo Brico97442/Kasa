@@ -1,9 +1,7 @@
-import logo from "../assets/logo-color.png"; 
-
-function Cart() {
+function Cart({image}) {
   return (
     <div className="cart">
-      <img src={logo} alt="logo kasa" className="logo-kasa" />
+      <img src={image} alt="logo kasa" className="logo-kasa" />
     </div>
   );
 }

@@ -1,5 +1,9 @@
 
 .gallery-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    gap: 30px;
     width: 100%;
     background: #f6f6f6;
     margin-top: 43px;
