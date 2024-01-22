@@ -4,16 +4,29 @@ function Collapse() {
   const [isOpen,setIsOpen]= useState(false);
   
   return (
-    <div className="collapse">
+    <div className={`collapse ${isOpen ? 'isOpen' : ''}`}>
+     
      <div className='collapse_header'>
         <p className='collapse_title'>Title</p>
-        <button className='collapse_header_button' onClick={()=> setIsOpen(!isOpen)}>
+        
+        <button  className={`collapse_header_button ${isOpen ? 'isOpen' : ''}`}
+        onClick={()=> setIsOpen(!isOpen)}>
           <img src={chevron} alt='chevron-img'  className={`collapse_header_button_img ${isOpen ? 'isOpen' : ''}`}/>
         </button>
      </div>
-     {isOpen && <div className='collapse_content'>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate fuga pariatur itaque iste porro nisi,
-        </div>}
+     <div className={`collapse_content ${isOpen ? 'isOpen' : ''}`}>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate fuga pariatur itaque iste porro nisi,
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate fuga pariatur itaque iste porro nisi,
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate fuga pariatur itaque iste porro nisi,
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate fuga pariatur itaque iste porro nisi,
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate fuga pariatur itaque iste porro nisi,
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate fuga pariatur itaque iste porro nisi,
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate fuga pariatur itaque iste porro nisi,
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate fuga pariatur itaque iste porro nisi,
+
+        </p>
+        </div>
     </div>
   );
 }
