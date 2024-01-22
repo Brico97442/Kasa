@@ -1,0 +1,20 @@
+.collapse {
+  width: 100%;
+  max-width: 956px;
+  
+  &_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff6060;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  &_content {
+    background-color: #f6f6f6;
+    color: #ff6060;
+    padding: 20px ;
+    border-radius: 5px;
+  }
+}

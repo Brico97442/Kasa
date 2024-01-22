@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Banner from "../components/Banner";
+import Collapse from "../components/Collapse";
 import imgaboutbanner from "../assets/img-banner2.jpg"
 
 function About () {
@@ -8,6 +9,7 @@ function About () {
     <div className="app-container">
     <Header />
     <Banner imgsrc={imgaboutbanner}/>
+    <Collapse/>
     <Footer />
     </div>
   )
