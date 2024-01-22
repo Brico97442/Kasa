@@ -118,6 +118,16 @@ footer p {
   padding: 10px;
   border-radius: 5px;
 }
+.collapse_header_button {
+  background-color: #ff6060;
+  border: none;
+}
+.collapse_header_button_img {
+  transition: transform 0.3s ease-in-out;
+}
+.collapse_header_button .isOpen {
+  transform: rotate(-180deg);
+}
 .collapse_content {
   background-color: #f6f6f6;
   color: #ff6060;
