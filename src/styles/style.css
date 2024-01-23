@@ -144,11 +144,41 @@ footer p {
 }
 
 .carrousel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
   margin-top: 50px;
   width: 1240px;
   height: 415px;
   border-radius: 25px;
-  background-color: brown;
+}
+.carrousel_btn_left {
+  position: absolute;
+  display: flex;
+  box-sizing: content-box;
+  width: 48px;
+  height: 80px;
+  background-color: transparent;
+  border: none;
+  left: 0;
+  cursor: pointer;
+  margin-left: 23px;
+}
+.carrousel_btn_right {
+  position: absolute;
+  display: flex;
+  box-sizing: content-box;
+  width: 48px;
+  height: 80px;
+  background-color: transparent;
+  border: none;
+  right: 0;
+  cursor: pointer;
+  margin-right: 23px;
+}
+.carrousel .img-banner {
+  border-radius: 25px;
 }
 
 * {

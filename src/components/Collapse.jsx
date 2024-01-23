@@ -9,8 +9,7 @@ function Collapse() {
      <div className='collapse_header'>
         <p className='collapse_title'>Title</p>
         
-        <button  className={`collapse_header_button ${isOpen ? 'isOpen' : ''}`}
-        onClick={()=> setIsOpen(!isOpen)}>
+        <button  className={`collapse_header_button ${isOpen ? 'isOpen' : ''}`} onClick={()=> setIsOpen(!isOpen)}>
           <img src={chevron} alt='chevron-img'  className={`collapse_header_button_img ${isOpen ? 'isOpen' : ''}`}/>
         </button>
      </div>
