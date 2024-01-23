@@ -7,6 +7,7 @@
     width: 1240px;
     height: 415px;
     border-radius: 25px;
+    box-sizing: content-box;
     
     &_btn_left{
         position: absolute;
@@ -35,7 +36,10 @@
     }
 
     .img-banner{
-        border-radius: 25px; 
+        border-radius: 25px;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
     }
    
 }

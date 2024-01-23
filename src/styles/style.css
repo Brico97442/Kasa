@@ -153,6 +153,7 @@ footer p {
   width: 1240px;
   height: 415px;
   border-radius: 25px;
+  box-sizing: content-box;
 }
 .carrousel_btn_left {
   position: absolute;
@@ -180,6 +181,9 @@ footer p {
 }
 .carrousel .img-banner {
   border-radius: 25px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 * {
