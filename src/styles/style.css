@@ -143,6 +143,12 @@ footer p {
   height: 150px;
 }
 
+.carrousel {
+  width: 1240px;
+  height: 223px;
+  background-color: brown;
+}
+
 * {
   margin: 0;
   padding: 0;
