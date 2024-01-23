@@ -9,7 +9,6 @@ function Article () {
     <div className="app-container">
     <Header />
     <Carrousel/>
-    
     <Footer />
     </div>
   )
