@@ -10,6 +10,9 @@ function About () {
     <Header />
     <Banner imgsrc={imgaboutbanner}/>
     <Collapse/>
+    <Collapse/>
+    <Collapse/>
+    <Collapse/>
     <Footer />
     </div>
   )
