@@ -49,8 +49,6 @@ function Carrousel() {
             <img src={leftArrow} alt='leftArrow' className='left_arrow_img'/>
           </button>
           
-          
-          
           <button className='carrousel_btn_right' onClick={nextClick}>
             <img src={rightArrow} alt='rightArrow' className='right_arrow_img'/>
           </button>
