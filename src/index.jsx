@@ -13,8 +13,8 @@ root.render(
       <Router>
             <Routes>
                 <Route path="/" element={<Main/>}/>
-                <Route path="/pages/a_propos" element={<About/>} />
-                <Route path="/pages/Article/:id" element={<Article/>} />
+                <Route path="/a_propos" element={<About/>} />
+                <Route path="/Article/:id" element={<Article/>} />
             </Routes>
       </Router>
   </React.StrictMode>
