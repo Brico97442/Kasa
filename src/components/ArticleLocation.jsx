@@ -1,7 +1,7 @@
 import React from "react";
 
-export default function ArticleLocation() {
+export default function ArticleLocation({location}) {
     return (
-    <p> Le gros chat a roissy </p>
+    <p>{location}</p>
     )
 }

@@ -5,6 +5,8 @@ import Collapse from "../components/Collapse";
 import Footer from "../components/Footer";
 import { useParams } from 'react-router-dom';
 import logements from "../logements.json";
+import ArticleTitle from "../components/ArticleTitle";
+import ArticleLocation from "../components/ArticleLocation";
 
 function Article () {
   let { id } = useParams();
@@ -13,6 +15,10 @@ function Article () {
     <div className="app-container">
     <Header />
     <Carrousel pictures={logement.pictures} />
+    <div>
+      <ArticleTitle title={logement.title}/>
+      <ArticleLocation location={logement.location}/>
+    </div>
     <div className="collapse_container">
       <Collapse/>
       <Collapse/>
