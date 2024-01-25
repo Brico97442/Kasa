@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
-import logements from "../logements.json"
 import leftArrow from "../assets/Left_arrow.png"
 import rightArrow from "../assets/Right_arrow.png"
 
 
-function Carrousel() {
+function Carrousel({pictures}) {
+  
   const [currentIndex, setCurrentIndex] = useState(0);
-  const pictures = logements[16].pictures;
-
+ 
   const previousClick = () => {
     const newIndex = (currentIndex - 1 + pictures.length) % pictures.length;
     setCurrentIndex(newIndex);
