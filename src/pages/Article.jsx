@@ -11,9 +11,9 @@ import Tags from "../components/Tag";
 
 function Article () {
   
-  let { id } = useParams();
-  let logement = logements.find(logement => logement.id === id);
-  
+  const { id } = useParams();
+  const logement = logements.find(logement => logement.id === id);
+
   return (
     <div className="app-container">
     <Header />
@@ -21,7 +21,7 @@ function Article () {
     <div>
       <ArticleTitle title={logement.title}/>
       <ArticleLocation location={logement.location}/>
-      <Tags/>
+      <Tags tags={logement.tags} />
     </div>
     <div className="collapse_container">
       <Collapse/>
