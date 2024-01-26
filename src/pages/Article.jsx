@@ -18,10 +18,15 @@ function Article () {
     <div className="app-container">
     <Header />
     <Carrousel pictures={logement.pictures} />
-    <div>
+    <div className="flex-between">
+      <div >
       <ArticleTitle title={logement.title}/>
       <ArticleLocation location={logement.location}/>
       <Tags tags={logement.tags} />
+      </div>
+      <div >
+     
+      </div>
     </div>
     <div className="collapse_container">
       <Collapse/>
