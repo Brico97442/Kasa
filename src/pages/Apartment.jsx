@@ -19,14 +19,14 @@ function Article () {
     <Header />
     <Carrousel pictures={logement.pictures} />
     <div className="flex-between">
-      <div >
+    <div >
       <ArticleTitle title={logement.title}/>
       <ArticleLocation location={logement.location}/>
       <Tags tags={logement.tags} />
-      </div>
-      <div >
+    </div>
+    <div >
      
-      </div>
+    </div>
     </div>
     <div className="collapse_container">
       <Collapse/>
