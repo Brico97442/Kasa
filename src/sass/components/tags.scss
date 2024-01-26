@@ -2,6 +2,7 @@
   display: flex;
   list-style: none;
   gap: 10px;
+  margin-top: 20px;
 }
 .tag {
   display: flex;
@@ -9,7 +10,9 @@
   align-items: center;
   color: white;
   background-color: #ff6060;
-  min-width: 125px;
   height: 25px;
-  border-radius: 10px;
+  min-width: 115px;
+  border-radius: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
