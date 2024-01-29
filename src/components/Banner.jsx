@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-function Banner({imgsrc, title}) {
+function Banner({ imgsrc, title }) {
   return (
     <div className="banner">
       <img src={imgsrc} alt="img-banner " className="img-banner" />

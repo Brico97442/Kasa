@@ -3,9 +3,11 @@ import React from "react";
 function Tags({ tags }) {
   return (
     <div>
-      <ul  className="tags">
+      <ul className="tags">
         {tags.map((tag, index) => (
-          <li key={index} className="tag">{tag}</li>
+          <li key={index} className="tag">
+            {tag}
+          </li>
         ))}
       </ul>
     </div>
