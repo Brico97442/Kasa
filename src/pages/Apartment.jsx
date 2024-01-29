@@ -1,4 +1,5 @@
 import React from "react";
+
 import Header from "../components/Header";
 import Carrousel from "../components/Carrousel";
 import Collapse from "../components/Collapse";
@@ -8,6 +9,8 @@ import logements from "../logements.json";
 import ArticleTitle from "../components/ArticleTitle";
 import ArticleLocation from "../components/ArticleLocation";
 import Tags from "../components/Tag";
+import HostName from "../components/HostName";
+import HostPicture from "../components/HostPicture";
 
 function Article() {
   const { id } = useParams();
@@ -18,12 +21,15 @@ function Article() {
       <Header />
       <Carrousel pictures={logement.pictures} />
       <div className="flex-between">
-        <div>
+        <div className="logement">
           <ArticleTitle title={logement.title} />
           <ArticleLocation location={logement.location} />
           <Tags tags={logement.tags} />
         </div>
-        <div></div>
+        <div className="host">
+          <HostName name={logement.host.name}/>
+          <HostPicture photo={logement.host.picture} />
+        </div>
       </div>
       <div className="collapse_container">
         <Collapse />
