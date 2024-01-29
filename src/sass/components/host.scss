@@ -1,0 +1,12 @@
+.host {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 10px;
+
+  &_picture {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+  }
+}

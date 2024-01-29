@@ -232,6 +232,18 @@ footer p {
   justify-content: space-between;
 }
 
+.host {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 10px;
+}
+.host_picture {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
 * {
   margin: 0;
   padding: 0;

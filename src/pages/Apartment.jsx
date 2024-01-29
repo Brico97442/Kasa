@@ -9,8 +9,7 @@ import logements from "../logements.json";
 import ArticleTitle from "../components/ArticleTitle";
 import ArticleLocation from "../components/ArticleLocation";
 import Tags from "../components/Tag";
-import HostName from "../components/HostName";
-import HostPicture from "../components/HostPicture";
+import Host from "../components/Host";
 
 function Article() {
   const { id } = useParams();
@@ -26,9 +25,8 @@ function Article() {
           <ArticleLocation location={logement.location} />
           <Tags tags={logement.tags} />
         </div>
-        <div className="host">
-          <HostName name={logement.host.name}/>
-          <HostPicture photo={logement.host.picture} />
+        <div>
+          <Host photo={logement.host.picture} name={logement.host.name} />
         </div>
       </div>
       <div className="collapse_container">
