@@ -243,6 +243,11 @@ footer p {
   height: 64px;
   border-radius: 50%;
 }
+.host_name {
+  max-width: 70px;
+  text-align: right;
+  color: #ff6060;
+}
 
 * {
   margin: 0;

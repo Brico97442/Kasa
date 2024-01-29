@@ -9,4 +9,10 @@
     height: 64px;
     border-radius: 50%;
   }
+
+  &_name {
+    max-width: 70px;
+    text-align: right;
+    color: #ff6060;
+  }
 }
