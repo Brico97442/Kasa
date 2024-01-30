@@ -32,8 +32,14 @@ function Article() {
         </div>
       </div>
       <div className="collapse_container">
-        <Collapse />
-        <Collapse />
+        <Collapse
+          collapseContent={logement.description}
+          collapseTitle="Description"
+        />
+        <Collapse
+          collapseContent={logement.equipments}
+          collapseTitle="Équipements"
+        />
       </div>
       <Footer />
     </div>
