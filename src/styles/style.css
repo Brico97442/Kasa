@@ -150,7 +150,7 @@ footer p {
   margin: 20px;
 }
 .collapse_content.isOpen {
-  height: 150px;
+  height: auto;
 }
 
 .carrousel {
