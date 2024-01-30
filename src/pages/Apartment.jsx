@@ -10,6 +10,7 @@ import ArticleTitle from "../components/ArticleTitle";
 import ArticleLocation from "../components/ArticleLocation";
 import Tags from "../components/Tag";
 import Host from "../components/Host";
+import Rate from "../components/Rate";
 
 function Article() {
   const { id } = useParams();
@@ -27,6 +28,7 @@ function Article() {
         </div>
         <div>
           <Host photo={logement.host.picture} name={logement.host.name} />
+          <Rate rating={logement.rating} />
         </div>
       </div>
       <div className="collapse_container">
