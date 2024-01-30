@@ -108,7 +108,6 @@ footer p {
 
 .collapse {
   width: 100%;
-  max-width: 956px;
   margin-top: 31px;
 }
 .collapse_header {
@@ -134,9 +133,17 @@ footer p {
   height: 0;
   overflow: hidden;
   background-color: #f6f6f6;
-  color: #ff6060;
   border-radius: 5px;
   transition: height 0.6s ease-in-out;
+  font-size: 18px;
+}
+.collapse_content ul {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+.collapse_content ul li {
+  list-style: none;
 }
 .collapse_content p {
   margin: 20px;
@@ -199,6 +206,7 @@ footer p {
 
 .collapse_container {
   display: flex;
+  width: 100%;
   max-width: 1240px;
   gap: 76px;
 }
