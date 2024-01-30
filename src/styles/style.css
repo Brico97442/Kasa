@@ -202,8 +202,9 @@ footer p {
   max-width: 1240px;
   gap: 76px;
 }
-.collapse_container .rate {
-  margin-top: 10px;
+
+.rate {
+  margin-top: 21px;
 }
 
 .tags {
