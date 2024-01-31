@@ -8,6 +8,7 @@ import Main from "./pages/Main";
 import About from "./pages/About";
 import Apartment from "./pages/Apartment";
 import reportWebVitals from "./reportWebVitals";
+import NotFound from "./pages/NotFound";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -17,6 +18,7 @@ root.render(
         <Route path="/" element={<Main />} />
         <Route path="/about" element={<About />} />
         <Route path="/apartments/:id" element={<Apartment />} />
+        <Route path="/*" element={<NotFound />} />
       </Routes>
     </Router>
   </React.StrictMode>

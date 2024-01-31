@@ -73,7 +73,6 @@ footer {
   color: white;
   padding: 29px 0;
   background-color: black;
-  margin-top: 50px;
 }
 footer img {
   width: 122px;
@@ -279,6 +278,36 @@ footer p {
   max-width: 70px;
   text-align: right;
   color: #ff6060;
+}
+
+.not_found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.not_found h1 {
+  color: #ff6060;
+  font-size: 288px;
+  font-style: normal;
+  font-weight: 700;
+  margin-top: 139px;
+  height: 263px;
+}
+.not_found p {
+  color: #ff6060;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  margin-top: 139px;
+}
+.not_found a {
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  margin-top: 139px;
+  margin-bottom: 139px;
 }
 
 * {
