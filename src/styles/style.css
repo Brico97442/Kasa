@@ -41,9 +41,12 @@ header nav ul {
 }
 header nav ul .header-links {
   text-decoration: none;
-  color: #ff6060;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  color: black;
 }
-header nav ul .header-links:active {
+header nav ul .header-links.active {
   text-decoration: underline;
 }
 
@@ -95,12 +98,11 @@ footer p {
   border-radius: 10px;
 }
 .cart p {
-  max-width: 160px;
+  margin: 10px;
   bottom: 20px;
   left: 20px;
   position: absolute;
   color: #fff;
-  font-family: Montserrat;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -117,6 +119,8 @@ footer p {
   align-items: center;
   background-color: #ff6060;
   color: #fff;
+  font-weight: 700;
+  font-size: 18px;
   padding: 10px;
   border-radius: 5px;
 }
@@ -281,7 +285,6 @@ footer p {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
 }
 
 .app-container {
@@ -289,7 +292,7 @@ footer p {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 1440px;
+  height: 100%;
   margin: auto;
 }
 

@@ -9,6 +9,8 @@
     align-items: center;
     background-color: #ff6060;
     color: #fff;
+    font-weight: 700;
+    font-size: 18px;
     padding: 10px;
     border-radius: 5px;
 
@@ -47,7 +49,7 @@
     }
 
     &.isOpen {
-      height:auto;
+      height: auto;
     }
   }
 }
