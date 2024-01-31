@@ -34,19 +34,19 @@ header nav img {
   width: 210px;
   object-fit: cover;
 }
-header nav ul {
+header nav #navbar {
   display: flex;
   align-items: center;
   gap: 57px;
 }
-header nav ul .header-links {
+header nav #navbar .header-links {
   text-decoration: none;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
   color: black;
 }
-header nav ul .header-links.active {
+header nav #navbar a.active {
   text-decoration: underline;
 }
 

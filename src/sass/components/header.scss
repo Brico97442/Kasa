@@ -10,7 +10,7 @@ header {
       width: 210px;
       object-fit: cover;
     }
-    ul {
+    #navbar {
       display: flex;
       align-items: center;
       gap: 57px;
@@ -22,9 +22,11 @@ header {
         font-weight: 500;
         color: black;
 
-        &.active {
-          text-decoration: underline;
-        }
+       
+      }
+
+      a.active{
+        text-decoration: underline;
       }
     }
   }

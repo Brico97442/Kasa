@@ -7,15 +7,11 @@ function Header() {
     <header>
       <nav>
         <img src={logo} alt="logo kasa" className="logo-kasa" />
-        <ul>
-          <NavLink className="header-links" activeClassName="active" to="/">
+        <ul id="navbar">
+          <NavLink className="header-links" to="/">
             Accueil
           </NavLink>
-          <NavLink
-            className="header-links"
-            activeClassName="active"
-            to="/about"
-          >
+          <NavLink className="header-links" to="/about">
             A Propos
           </NavLink>
         </ul>

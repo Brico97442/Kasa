@@ -5,17 +5,15 @@ import starFull from "../assets/star_full.png";
 
 export default function Rate({ rating }) {
   const totalStars = 5;
-  const fullStars = parseInt(rating);
-
-  const stars = [];
-
-  for (let i = 0; i < totalStars; i++) {
-    if (i < fullStars) {
-      stars.push(<img key={i} src={starFull} alt="star" />);
-    } else {
-      stars.push(<img key={i} src={starEmpty} alt="star" />);
+  const filledStars = parseInt(rating);
+  const stars = new Array(totalStars).fill(0).map((star, i) => {
+    if (i < filledStars) {
+      return <img key={i} src={starFull} alt="starFull" />;
     }
-  }
+
+    return <img key={i} src={starEmpty} alt="starEmpty" />;
+  });
+  
 
   return <ul className="rate">{stars}</ul>;
 }
