@@ -1,5 +1,8 @@
+@import "./abstracts/mixins.scss";
+
 @import "./components/banner.scss";
 @import "./components/header.scss";
+
 @import "./components/gallery.scss";
 @import "./components/footer.scss";
 @import "./components/cart.scss";
@@ -7,9 +10,9 @@
 @import "./components/carrousel.scss";
 @import "./components/apartment.scss";
 @import "./components/tags.scss";
-@import "./abstracts/flexBetween.scss";
 @import "./components/host.scss";
 @import "./components/notFound.scss";
+
 
 * {
   margin: 0;

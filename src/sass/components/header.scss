@@ -2,7 +2,7 @@ header {
   width: 100%;
   max-width: 1240px;
   nav {
-    display: flex;
+    @include flex;
     justify-content: space-between;
     height: 68px;
     margin-top: 45px;
@@ -11,8 +11,7 @@ header {
       object-fit: cover;
     }
     #navbar {
-      display: flex;
-      align-items: center;
+      @include flexCenterItems;
       gap: 57px;
 
       .header-links {
@@ -21,11 +20,9 @@ header {
         font-style: normal;
         font-weight: 500;
         color: black;
-
-       
       }
 
-      a.active{
+      a.active {
         text-decoration: underline;
       }
     }

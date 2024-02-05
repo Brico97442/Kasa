@@ -257,14 +257,6 @@ footer p {
   padding-right: 20px;
 }
 
-.flex-between {
-  margin-top: 30px;
-  max-width: 1240px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
 .host {
   display: flex;
   align-items: center;
