@@ -1,11 +1,11 @@
 .cart {
   position: relative;
   border-radius: 10px;
-  width: 100%;
+  @include fullWidth;
   max-height: 340px;
   img {
     object-fit: cover;
-    width: 100%;
+    @include fullWidth;
     max-width: 340px;
     height: 340px;
     border-radius: 10px;

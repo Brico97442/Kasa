@@ -3,6 +3,23 @@ display: flex;
 align-items: center;
 }
 
+@mixin flexCenterContent {
+display: flex;
+justify-content: center;
+}
+
 @mixin flex {
     display: flex;
+}
+
+@mixin flexBetween {
+    display: flex;
+    justify-content: space-between ;
+}
+
+@mixin fullWidth {
+    width:100%;
+}
+@mixin fullHeight {
+    height:100%;
 }

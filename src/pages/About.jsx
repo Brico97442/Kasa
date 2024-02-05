@@ -10,8 +10,8 @@ function About() {
   return (
     <div className="app-container">
       <Header />
+      <Banner imgsrc={imgaboutbanner} />
       <div className="app-container-about">
-        <Banner imgsrc={imgaboutbanner} />
         <Collapse
           collapseTitle="Fiabilité"
           collapseContent="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes."

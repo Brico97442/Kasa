@@ -13,7 +13,6 @@
 @import "./components/host.scss";
 @import "./components/notFound.scss";
 
-
 * {
   margin: 0;
   padding: 0;
@@ -30,9 +29,14 @@
 
   &-apartment {
     margin-bottom: 50px;
+    margin-top: 30px;
   }
 
   &-about {
     margin-bottom: 38px;
   }
+}
+
+.flex-between {
+  @include flexBetween;
 }

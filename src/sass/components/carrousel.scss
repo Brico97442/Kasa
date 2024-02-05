@@ -1,56 +1,53 @@
 .carrousel {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    margin-top: 50px;
-    width: 100%;
-    max-width: 1240px;
-    height: 415px;
-    border-radius: 25px;
+  @include flexBetween;
+  @include flexCenterItems;
+  @include fullWidth;
+  position: relative;
+  margin-top: 50px;
+  max-width: 1240px;
+  height: 415px;
+  border-radius: 25px;
+  box-sizing: content-box;
+
+  &_btn_left {
+    @include flex;
+    position: absolute;
     box-sizing: content-box;
-    
-    &_btn_left{
-        position: absolute;
-        display: flex;
-        box-sizing: content-box;
-        width: 48px;
-        height: 80px;
-        background-color:transparent;
-        border: none;
-        left: 0;
-        cursor: pointer;
-        margin-left: 23px;
-    }
-    
-    &_btn_right{
-        position: absolute;
-        display: flex;
-        box-sizing: content-box;
-        width: 48px;
-        height: 80px;
-        background-color:transparent;
-        border: none;
-        right: 0;
-        cursor: pointer;
-        margin-right: 23px;
-    }
+    width: 48px;
+    height: 80px;
+    background-color: transparent;
+    border: none;
+    left: 0;
+    cursor: pointer;
+    margin-left: 23px;
+  }
 
-    .img-banner{
-        border-radius: 25px;
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-    }
+  &_btn_right {
+    @include flex;
+    position: absolute;
+    box-sizing: content-box;
+    width: 48px;
+    height: 80px;
+    background-color: transparent;
+    border: none;
+    right: 0;
+    cursor: pointer;
+    margin-right: 23px;
+  }
 
-    .carrousel-counter {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        color: #fff;
-        position: absolute;
-        bottom: 0;
-        margin-bottom: 25px;
-    }
-   
+  .img-banner {
+    @include fullHeight;
+    @include fullWidth;
+    border-radius: 25px;
+    object-fit: cover;
+  }
+
+  .carrousel-counter {
+    @include flexCenterContent;
+    @include fullWidth;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 25px;
+  }
 }

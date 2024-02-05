@@ -19,8 +19,8 @@ function Apartment() {
   return (
     <div className="app-container">
       <Header />
+      <Carrousel pictures={logement.pictures} />
       <div className="app-container-apartment">
-        <Carrousel pictures={logement.pictures} />
         <div className="flex-between">
           <div className="logement">
             <ApartmentTitle title={logement.title} />

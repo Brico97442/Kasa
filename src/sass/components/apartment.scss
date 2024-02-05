@@ -1,6 +1,6 @@
 .collapse_container {
-  display: flex;
-  width: 100%;
+  @include flex;
+  @include fullWidth;
   max-width: 1240px;
   gap: 76px;
 }
@@ -16,10 +16,10 @@
 }
 
 .rate {
-  display: flex;
+  @include flex;
   margin-top: 21px;
   max-width: 196px;
-  width: 100%;
+  @include fullWidth;
   height: 24px;
   gap: 10px;
 }

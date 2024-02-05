@@ -1,12 +1,15 @@
 .collapse {
-  width: 100%;
+  @include fullWidth;
   max-width: 1240px;
   margin-top: 31px;
 
+  &_container {
+    height: 100%;
+  }
+
   &_header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flexBetween;
+    @include flexCenterItems;
     background-color: #ff6060;
     color: #fff;
     font-weight: 700;
@@ -35,6 +38,7 @@
     border-radius: 5px;
     transition: height 0.6s ease-in-out;
     font-size: 18px;
+
     ul {
       display: flex;
       flex-direction: column;
@@ -49,7 +53,8 @@
     }
 
     &.isOpen {
-      height: auto;
+      height: 100%;
+      max-height: 166px;
     }
   }
 }
