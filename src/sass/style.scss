@@ -21,10 +21,9 @@
 }
 
 .app-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
+  @include flexCenterItems;
+  @include fullWidth;
+  @include flexColumn;
   margin: auto;
   min-height: 100vh;
 

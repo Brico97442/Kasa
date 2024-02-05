@@ -1,6 +1,5 @@
 .host {
-  display: flex;
-  align-items: center;
+  @include flexCenterItems;
   flex-direction: row-reverse;
   gap: 10px;
 

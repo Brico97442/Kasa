@@ -1,5 +1,5 @@
 .tags {
-  display: flex;
+ @include flex;
   justify-content: flex-start;
   list-style: none;
   gap: 10px;
@@ -7,9 +7,8 @@
 }
 
 .tag {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+ @include flexCenterContent;
+ @include flexCenterItems;
   color: $color-second;
   background-color: $color-first;
   height: 25px;

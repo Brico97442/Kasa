@@ -1,9 +1,8 @@
 footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+  @include flexCenterItems;
+  @include flexCenterContent;
+  @include fullWidth;
+  @include flexColumn;
   color: $color-second;
   padding: 29px 0;
   background-color: black;

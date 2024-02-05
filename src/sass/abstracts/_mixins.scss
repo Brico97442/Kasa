@@ -24,3 +24,9 @@
 @mixin fullHeight {
   height: 100%;
 }
+
+@mixin flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+

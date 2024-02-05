@@ -40,8 +40,7 @@
     font-size: 18px;
 
     ul {
-      display: flex;
-      flex-direction: column;
+      @include flexColumn;
       margin: 20px;
       li {
         list-style: none;

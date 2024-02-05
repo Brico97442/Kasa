@@ -1,9 +1,8 @@
 header {
-  width: 100%;
+  @include fullWidth;
   max-width: 1240px;
   nav {
-    @include flex;
-    justify-content: space-between;
+    @include flexBetween;
     height: 68px;
     margin-top: 45px;
     img {
