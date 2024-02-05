@@ -45,7 +45,7 @@
   .carrousel-counter {
     @include flexCenterContent;
     @include fullWidth;
-    color: #fff;
+    color: $color-second;
     position: absolute;
     bottom: 0;
     margin-bottom: 25px;

@@ -1,6 +1,6 @@
 .collapse {
   @include fullWidth;
-  max-width: 1240px;
+  max-width: 1023px;
   margin-top: 31px;
 
   &_container {
@@ -10,15 +10,15 @@
   &_header {
     @include flexBetween;
     @include flexCenterItems;
-    background-color: #ff6060;
-    color: #fff;
+    background-color: $color-first;
+    color: $color-second;
     font-weight: 700;
     font-size: 18px;
     padding: 10px;
     border-radius: 5px;
 
     &_button {
-      background-color: #ff6060;
+      background-color: $color-first;
       border: none;
 
       &_img {
@@ -32,9 +32,9 @@
   }
 
   &_content {
-    height:0;
+    height: 0;
     overflow: hidden;
-    background-color: #f6f6f6;
+    background-color: $color-third;
     border-radius: 5px;
     transition: height 0.6s ease-in-out;
     font-size: 18px;
@@ -53,7 +53,7 @@
     }
 
     &.isOpen {
-      height:166px;
+      height: 166px;
     }
   }
 }
