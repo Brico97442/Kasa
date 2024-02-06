@@ -11,8 +11,10 @@ function Main() {
   return (
     <div className="app-container">
       <Header />
-      <Banner imgsrc={imghomebanner} title="Chez vous, partout et ailleurs" />
-      <Gallery />
+      <div className="app-container-main">
+        <Banner imgsrc={imghomebanner} title="Chez vous, partout et ailleurs" />
+        <Gallery />
+      </div>
       <Footer />
     </div>
   );

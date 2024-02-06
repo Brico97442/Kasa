@@ -10,6 +10,13 @@
   margin-top: 50px;
   border-radius: 25px;
 }
+@media screen and (max-width: 768px) {
+  .banner {
+    justify-content: left;
+    height: 111px;
+    margin-top: 27px;
+  }
+}
 .banner img {
   height: 100%;
   width: 100%;
@@ -17,11 +24,25 @@
   object-fit: cover;
   filter: brightness(30%);
 }
+@media screen and (max-width: 768px) {
+  .banner img {
+    border-radius: 10px;
+  }
+}
 .banner h1 {
   color: #fff;
   position: absolute;
   font-size: 48px;
   font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .banner h1 {
+    font-size: 24px;
+    max-width: 220px;
+    margin-left: 16px;
+    display: flex;
+    white-space-collapse: break-spaces;
+  }
 }
 
 header {
@@ -34,14 +55,30 @@ header nav {
   height: 68px;
   margin-top: 45px;
 }
+@media screen and (max-width: 768px) {
+  header nav {
+    height: 47px;
+  }
+}
 header nav img {
   width: 210px;
   object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  header nav img {
+    max-width: 145px;
+    object-fit: contain;
+  }
 }
 header nav #navbar {
   display: flex;
   align-items: center;
   gap: 57px;
+}
+@media screen and (max-width: 768px) {
+  header nav #navbar {
+    gap: 25px;
+  }
 }
 header nav #navbar .header-links {
   text-decoration: none;
@@ -49,6 +86,12 @@ header nav #navbar .header-links {
   font-style: normal;
   font-weight: 500;
   color: black;
+}
+@media screen and (max-width: 768px) {
+  header nav #navbar .header-links {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
 }
 header nav #navbar a.active {
   text-decoration: underline;
@@ -127,6 +170,11 @@ footer p {
   height: 340px;
   border-radius: 10px;
 }
+@media screen and (max-width: 1024px) {
+  .cart img {
+    height: 255px;
+  }
+}
 .cart p {
   margin: 10px;
   bottom: 20px;
@@ -136,6 +184,12 @@ footer p {
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
+}
+@media screen and (max-width: 1024px) {
+  .cart p {
+    margin: 0;
+    max-width: 200px;
+  }
 }
 
 .collapse {

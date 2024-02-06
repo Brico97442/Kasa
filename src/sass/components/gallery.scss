@@ -14,12 +14,12 @@
 
   @media screen and (max-width: 1024px) {
     display: grid;
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 1fr 1fr;
     padding: 20px;
   }
   @media screen and (max-width: 768px) {
     display: grid;
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
     background-color: $color-second;
     padding: 0;
     grid-gap: 20px;

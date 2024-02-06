@@ -7,13 +7,21 @@
   height: 223px;
   margin-top: 50px;
   border-radius: 25px;
-  
+  @media screen and (max-width: 768px) {
+    justify-content: left;
+    height: 111px;
+    margin-top: 27px;
+  }
+
   img {
     @include fullHeight;
     @include fullWidth;
     border-radius: 24px;
     object-fit: cover;
     filter: brightness(30%);
+    @media screen and (max-width: 768px) {
+      border-radius: 10px;
+    }
   }
 
   h1 {
@@ -21,5 +29,12 @@
     position: absolute;
     font-size: 48px;
     font-weight: 700;
+    @media screen and (max-width: 768px) {
+      font-size: 24px;
+      max-width: 220px;
+      margin-left: 16px;
+      display: flex;
+      white-space-collapse: break-spaces;
+    }
   }
 }

@@ -9,12 +9,17 @@
     margin: auto;
     max-width: none;
   }
+
   img {
     @include fullWidth;
     object-fit: cover;
     height: 340px;
     border-radius: 10px;
+    @media screen and (max-width: 1024px) {
+      height: 255px;
+    }
   }
+
   p {
     margin: 10px;
     bottom: 20px;
@@ -24,5 +29,9 @@
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
+    @media screen and (max-width: 1024px) {
+      margin: 0;
+      max-width: 200px;
+    }
   }
 }
