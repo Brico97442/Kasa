@@ -1,8 +1,6 @@
 header {
   @include fullWidth;
   max-width: 1240px;
-  
-  
 
   nav {
     @include flexBetween;
@@ -12,6 +10,7 @@ header {
       width: 210px;
       object-fit: cover;
     }
+
     #navbar {
       @include flexCenterItems;
       gap: 57px;
