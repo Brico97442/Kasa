@@ -3,10 +3,15 @@
   border-radius: 10px;
   @include fullWidth;
   max-height: 340px;
+  max-width: 340px;
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    margin: auto;
+    max-width: none;
+  }
   img {
-    object-fit: cover;
     @include fullWidth;
-    max-width: 340px;
+    object-fit: cover;
     height: 340px;
     border-radius: 10px;
   }
