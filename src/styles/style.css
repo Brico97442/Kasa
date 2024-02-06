@@ -20,6 +20,8 @@
 .banner h1 {
   color: #fff;
   position: absolute;
+  font-size: 48px;
+  font-weight: 700;
 }
 
 header {
@@ -71,6 +73,15 @@ header nav #navbar a.active {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .gallery-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #fff;
+    padding: 0;
+    grid-gap: 20px;
   }
 }
 
