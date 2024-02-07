@@ -10,8 +10,8 @@ import imghomebanner from "../assets/img-banner.png";
 function Main() {
   return (
     <div className="app-container">
-      <Header />
       <div className="app-container-main">
+        <Header />
         <Banner imgsrc={imghomebanner} title="Chez vous, partout et ailleurs" />
         <Gallery />
       </div>

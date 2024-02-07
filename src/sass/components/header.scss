@@ -1,7 +1,7 @@
 header {
   @include fullWidth;
   max-width: 1240px;
-
+  
   nav {
     @include flexBetween;
     height: 68px;

@@ -4,13 +4,17 @@
   @include fullWidth;
   position: relative;
   margin-top: 50px;
+  margin-bottom: 30px;
   max-width: 1240px;
   height: 415px;
   border-radius: 25px;
   box-sizing: content-box;
+  @media screen and (max-width: 768px) {
+    height: 255px;
+  }
 
   &_btn_left {
-    @include flex;
+   @include flexCenterItems;
     position: absolute;
     box-sizing: content-box;
     width: 48px;
@@ -20,10 +24,18 @@
     left: 0;
     cursor: pointer;
     margin-left: 23px;
+    @media screen and (max-width: 768px) {
+      width: 12px;
+    }
+    img {
+      @media screen and (max-width: 768px) {
+        width: 12px;
+      }
+    }
   }
 
   &_btn_right {
-    @include flex;
+   @include flexCenterItems;
     position: absolute;
     box-sizing: content-box;
     width: 48px;
@@ -33,6 +45,14 @@
     right: 0;
     cursor: pointer;
     margin-right: 23px;
+    @media screen and (max-width: 768px) {
+      width: 12px;
+    }
+    img {
+      @media screen and (max-width: 768px) {
+        width: 12px;
+      }
+    }
   }
 
   .img-banner {
@@ -49,5 +69,8 @@
     position: absolute;
     bottom: 0;
     margin-bottom: 25px;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
 }

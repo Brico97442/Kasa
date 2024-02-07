@@ -27,19 +27,39 @@
   margin: auto;
   min-height: 100vh;
 
-  @media screen and (max-width: 1280px) {
-    margin: 0px 50px;
-    width: auto;
-  }
-
-  @media screen and (max-width: 1024px) {
-    margin: 0px 20px;
-    width: auto;
+  &-main {
+    @media screen and (max-width: 1280px) {
+      margin: 0px 50px;
+      width: auto;
+    }
+    
+    @media screen and (max-width: 1024px) {
+      margin: 0px 20px;
+      width: auto;
+    }
   }
 
   &-apartment {
     margin-bottom: 50px;
     margin-top: 30px;
+    @media screen and (max-width: 1280px) {
+      margin: 0px 50px;
+      width: auto;
+    }
+    
+    @media screen and (max-width: 1024px) {
+      margin: 0px 20px;
+      width: auto;
+      @media screen and (max-width: 1280px) {
+        margin: 0px 50px;
+        width: auto;
+      }
+      
+      @media screen and (max-width: 1024px) {
+        margin: 0px 20px;
+        width: auto;
+      }
+    }
   }
 
   &-about {
@@ -47,6 +67,4 @@
   }
 }
 
-.flex-between {
-  @include flexBetween;
-}
+

@@ -3,12 +3,38 @@
   @include fullWidth;
   max-width: 1240px;
   gap: 76px;
+  @media screen and (max-width: 1024px) {
+    display: block;
+  }
+}
+
+.app-container-description {
+  @include flexBetween;
+  @media screen and (max-width: 1080px) {
+    flex-direction: column;
+  }
+}
+
+.host-container {
+  @media screen and (max-width: 1080px) {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-top: 16px;
+    
+  }
 }
 
 .appartment_title {
   font-size: 36px;
-  color:$color-first;
+  font-weight: 500;
+  color: $color-first;
   line-height: 51.34px;
+  @media screen and (max-width: 768px) {
+    font-size: 18px;
+    line-height: 35px;
+  }
 }
 
 .appartment_location {
@@ -22,4 +48,13 @@
   @include fullWidth;
   height: 24px;
   gap: 10px;
+  @media screen and (max-width: 1080px) {
+    margin-top: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-top: 0;
+    max-width: 196px;
+    height: 13px;
+  }
 }

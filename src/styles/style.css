@@ -34,6 +34,13 @@
   position: absolute;
   font-size: 48px;
   font-weight: 700;
+  filter: drop-shadow(0px 4px 25px #000000);
+  border-color: #000000;
+}
+@media screen and (max-width: 1024px) {
+  .banner h1 {
+    font-size: 32px;
+  }
 }
 @media screen and (max-width: 768px) {
   .banner h1 {
@@ -253,13 +260,20 @@ footer p {
   width: 100%;
   position: relative;
   margin-top: 50px;
+  margin-bottom: 30px;
   max-width: 1240px;
   height: 415px;
   border-radius: 25px;
   box-sizing: content-box;
 }
+@media screen and (max-width: 768px) {
+  .carrousel {
+    height: 255px;
+  }
+}
 .carrousel_btn_left {
   display: flex;
+  align-items: center;
   position: absolute;
   box-sizing: content-box;
   width: 48px;
@@ -270,8 +284,19 @@ footer p {
   cursor: pointer;
   margin-left: 23px;
 }
+@media screen and (max-width: 768px) {
+  .carrousel_btn_left {
+    width: 12px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .carrousel_btn_left img {
+    width: 12px;
+  }
+}
 .carrousel_btn_right {
   display: flex;
+  align-items: center;
   position: absolute;
   box-sizing: content-box;
   width: 48px;
@@ -281,6 +306,16 @@ footer p {
   right: 0;
   cursor: pointer;
   margin-right: 23px;
+}
+@media screen and (max-width: 768px) {
+  .carrousel_btn_right {
+    width: 12px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .carrousel_btn_right img {
+    width: 12px;
+  }
 }
 .carrousel .img-banner {
   height: 100%;
@@ -297,6 +332,11 @@ footer p {
   bottom: 0;
   margin-bottom: 25px;
 }
+@media screen and (max-width: 768px) {
+  .carrousel .carrousel-counter {
+    display: none;
+  }
+}
 
 .collapse_container {
   display: flex;
@@ -304,11 +344,43 @@ footer p {
   max-width: 1240px;
   gap: 76px;
 }
+@media screen and (max-width: 1024px) {
+  .collapse_container {
+    display: block;
+  }
+}
+
+.app-container-description {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1080px) {
+  .app-container-description {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .host-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-top: 16px;
+  }
+}
 
 .appartment_title {
   font-size: 36px;
+  font-weight: 500;
   color: #ff6060;
   line-height: 51.34px;
+}
+@media screen and (max-width: 768px) {
+  .appartment_title {
+    font-size: 18px;
+    line-height: 35px;
+  }
 }
 
 .appartment_location {
@@ -323,6 +395,18 @@ footer p {
   height: 24px;
   gap: 10px;
 }
+@media screen and (max-width: 1080px) {
+  .rate {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .rate {
+    margin-top: 0;
+    max-width: 196px;
+    height: 13px;
+  }
+}
 
 .tags {
   display: flex;
@@ -330,6 +414,11 @@ footer p {
   list-style: none;
   gap: 10px;
   margin-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  .tags {
+    flex-wrap: wrap;
+  }
 }
 
 .tag {
@@ -341,9 +430,21 @@ footer p {
   background-color: #ff6060;
   height: 25px;
   min-width: 115px;
-  border-radius: 20px;
+  border-radius: 10px;
   padding-left: 20px;
   padding-right: 20px;
+  font-size: 14px;
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .tag {
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 14px;
+    border-radius: 10px;
+    min-width: 50px;
+    white-space: nowrap;
+  }
 }
 
 .host {
@@ -353,14 +454,24 @@ footer p {
   gap: 10px;
 }
 .host_picture {
-  width: 64px;
   height: 64px;
   border-radius: 50%;
 }
+@media screen and (max-width: 768px) {
+  .host_picture {
+    height: 32px;
+  }
+}
 .host_name {
+  font-size: 18px;
   max-width: 70px;
   text-align: right;
   color: #ff6060;
+}
+@media screen and (max-width: 768px) {
+  .host_name {
+    font-size: 12px;
+  }
 }
 
 .not_found {
@@ -409,13 +520,13 @@ footer p {
   min-height: 100vh;
 }
 @media screen and (max-width: 1280px) {
-  .app-container {
+  .app-container-main {
     margin: 0px 50px;
     width: auto;
   }
 }
 @media screen and (max-width: 1024px) {
-  .app-container {
+  .app-container-main {
     margin: 0px 20px;
     width: auto;
   }
@@ -424,13 +535,32 @@ footer p {
   margin-bottom: 50px;
   margin-top: 30px;
 }
+@media screen and (max-width: 1280px) {
+  .app-container-apartment {
+    margin: 0px 50px;
+    width: auto;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .app-container-apartment {
+    margin: 0px 20px;
+    width: auto;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 1280px) {
+  .app-container-apartment {
+    margin: 0px 50px;
+    width: auto;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 1024px) {
+  .app-container-apartment {
+    margin: 0px 20px;
+    width: auto;
+  }
+}
 .app-container-about {
   margin-bottom: 38px;
-}
-
-.flex-between {
-  display: flex;
-  justify-content: space-between;
 }
 
 /*# sourceMappingURL=style.css.map */

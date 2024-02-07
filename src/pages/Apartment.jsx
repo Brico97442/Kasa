@@ -18,16 +18,16 @@ function Apartment() {
 
   return (
     <div className="app-container">
-      <Header />
-      <Carrousel pictures={logement.pictures} />
       <div className="app-container-apartment">
-        <div className="flex-between">
+        <Header />
+        <Carrousel pictures={logement.pictures} />
+        <div className="app-container-description">
           <div className="logement">
             <ApartmentTitle title={logement.title} />
             <ApartmentLocation location={logement.location} />
             <Tags tags={logement.tags} />
           </div>
-          <div>
+          <div className="host-container">
             <Host photo={logement.host.picture} name={logement.host.name} />
             <Rate rating={logement.rating} />
           </div>
