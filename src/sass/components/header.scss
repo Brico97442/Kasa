@@ -1,7 +1,7 @@
 header {
   @include fullWidth;
   max-width: 1240px;
-  
+
   nav {
     @include flexBetween;
     height: 68px;
@@ -10,7 +10,7 @@ header {
     @media screen and (max-width: 768px) {
       height: 47px;
     }
-    
+
     img {
       width: 210px;
       object-fit: cover;

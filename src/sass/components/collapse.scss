@@ -38,6 +38,7 @@
     border-radius: 5px;
     transition: height 0.6s ease-in-out;
     font-size: 18px;
+    margin-bottom: 20px;
 
     ul {
       @include flexColumn;
