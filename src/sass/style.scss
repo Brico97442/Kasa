@@ -32,7 +32,7 @@
       margin: 0px 50px;
       width: auto;
     }
-    
+
     @media screen and (max-width: 1024px) {
       margin: 0px 20px;
       width: auto;
@@ -46,7 +46,7 @@
       margin: 0px 50px;
       width: auto;
     }
-    
+
     @media screen and (max-width: 1024px) {
       margin: 0px 20px;
       width: auto;
@@ -54,7 +54,7 @@
         margin: 0px 50px;
         width: auto;
       }
-      
+
       @media screen and (max-width: 1024px) {
         margin: 0px 20px;
         width: auto;
@@ -63,8 +63,14 @@
   }
 
   &-about {
+    width: 100%;
+    max-width: 1240px;
+    @include flexColumn;
+    @include flexCenterItems;
     margin-bottom: 38px;
+    @media screen and (max-width: 1440px) {
+      margin: 0 20px;
+      width: auto;
+    }
   }
 }
-
-

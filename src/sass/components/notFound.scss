@@ -1,29 +1,56 @@
-.not_found {
-  @include flexCenterContent;
-  @include flexCenterItems;
+.not-found {
+  @include fullWidth;
   @include flexColumn;
-  font-style: normal;
-  
-  h1 {
-    color: $color-first;
-    font-size: 288px;
-    font-weight: 700;
-    margin-top: 139px;
-    height: 263px;
+  @include flexCenterItems;
+
+  @media screen and (max-width: 1024px) {
+    margin: 0 20px;
+    width: auto;
   }
 
-  p {
-    color: $color-first;
-    font-size: 36px;
-    font-weight: 500;
-    margin-top: 139px;
-  }
+  &-content {
+    @include flexCenterContent;
+    @include flexCenterItems;
+    @include flexColumn;
 
-  a {
-    color: #000;
-    font-size: 18px;
-    font-weight: 500;
-    margin-top: 139px;
-    margin-bottom: 89px;
+    @media screen and (max-width: 768px) {
+      gap: 113px;
+      margin-top: 113px;
+    }
+    h1 {
+      color: $color-first;
+      font-size: 288px;
+      font-weight: 700;
+      margin-top: 139px;
+      @media screen and (max-width: 768px) {
+        font-size: 96px;
+        margin-top: 0;
+      }
+    }
+
+    p {
+      color: $color-first;
+      font-size: 36px;
+      font-weight: 500;
+      margin-top: 139px;
+      text-align: center;
+      @media screen and (max-width: 768px) {
+        font-size: 18px;
+        margin-top: 0;
+      }
+    }
+
+    a {
+      color: #000;
+      font-size: 18px;
+      font-weight: 500;
+      margin-top: 139px;
+      margin-bottom: 89px;
+      @media screen and (max-width: 768px) {
+        font-size: 14px;
+        margin-top: 0;
+        margin-bottom: 113px;
+      }
+    }
   }
 }

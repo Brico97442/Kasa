@@ -11,10 +11,11 @@
   box-sizing: content-box;
   @media screen and (max-width: 768px) {
     height: 255px;
+    margin-bottom: 15px;
   }
 
   &_btn_left {
-   @include flexCenterItems;
+    @include flexCenterItems;
     position: absolute;
     box-sizing: content-box;
     width: 48px;
@@ -35,7 +36,7 @@
   }
 
   &_btn_right {
-   @include flexCenterItems;
+    @include flexCenterItems;
     position: absolute;
     box-sizing: content-box;
     width: 48px;

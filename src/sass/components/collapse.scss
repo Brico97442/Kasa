@@ -2,7 +2,9 @@
   @include fullWidth;
   max-width: 1023px;
   margin-top: 31px;
-
+  @media screen and (max-width: 768px) {
+    margin-top: 0;
+  }
   &_container {
     height: 100%;
   }
@@ -20,13 +22,25 @@
     &_button {
       background-color: $color-first;
       border: none;
+      border-radius: 5px;
 
       &_img {
         transition: transform 0.3s ease-in-out;
+        @media screen and (max-width: 768px) {
+          height: 9px;
+          width: 16px;
+          object-fit: cover;
+        }
       }
 
       .isOpen {
         transform: rotate(-180deg);
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      p {
+        font-size: 13px;
       }
     }
   }
@@ -36,24 +50,33 @@
     overflow: hidden;
     background-color: $color-third;
     border-radius: 5px;
-    transition: height 0.6s ease-in-out;
     font-size: 18px;
     margin-bottom: 20px;
-
+    transition: padding 0.2s ease;
+    padding: 0 20px;
     ul {
       @include flexColumn;
-      margin: 20px;
+
       li {
         list-style: none;
+        @media screen and (max-width: 768px) {
+          font-size: 12px;
+          font-weight: 400;
+        }
       }
     }
 
     p {
-      margin: 20px;
+      @media screen and (max-width: 768px) {
+        font-size: 12px;
+        font-weight: 400;
+      }
     }
 
     &.isOpen {
-      height: 166px;
+      height: auto;
+      max-height: 300px;
+      padding: 20px;
     }
   }
 }
