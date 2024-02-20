@@ -4,7 +4,7 @@ import Header from "../components/Header";
 import Carrousel from "../components/Carrousel";
 import Collapse from "../components/Collapse";
 import Footer from "../components/Footer";
-import { useParams } from "react-router-dom";
+import { Navigate, useParams } from "react-router-dom";
 import logements from "../logements.json";
 import ApartmentTitle from "../components/ApartmentTitle";
 import ApartmentLocation from "../components/ApartmentLocation";
@@ -15,7 +15,9 @@ import Rate from "../components/Rate";
 function Apartment() {
   const { id } = useParams();
   const logement = logements.find((logement) => logement.id === id);
-
+  if (!logement) {
+    return <Navigate to="*" />;
+  }
   return (
     <div className="app-container">
       <div className="app-container-apartment">
